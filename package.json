@@ -1,0 +1,21 @@
+{
+  "name": "@thebigrick/catalyst-payloadcms-slider",
+  "version": "0.0.1",
+  "description": "Catalyst slider plugin for Payload CMS",
+  "author": "Riccardo Tempesta <riccardo.tempesta@bigcommerce.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@bigcommerce/catalyst-core": "workspace:*",
+    "@thebigrick/catalyst-pluginizr": "workspace:*",
+    "@thebigrick/catalyst-payloadcms": "workspace:*",
+    "next": "15.1.0",
+    "react": "^19.0.0",
+    "payload": "^3.11.0",
+    "@payloadcms/live-preview-react": "^3.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.6",
+    "typescript": "^5.6.3",
+    "@types/react": "^19.0.2"
+  }
+}
