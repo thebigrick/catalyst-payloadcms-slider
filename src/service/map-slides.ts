@@ -1,4 +1,4 @@
-export interface CatalystSlide {
+export interface CatalystHomeSlide {
   description: string;
   key: number;
   title: string;
@@ -8,7 +8,7 @@ export interface CatalystSlide {
   };
 }
 
-const mapSlides = (slides): CatalystSlide[] => {
+const mapSlides = (slides): CatalystHomeSlide[] => {
   return slides.map((slide, idx) => ({
     description: slide.description,
     key: idx,

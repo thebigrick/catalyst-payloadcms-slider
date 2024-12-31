@@ -1,9 +1,9 @@
 import type { CollectionConfig } from 'payload';
 
-export const SlideImage: CollectionConfig = {
-  slug: 'slide-image',
+export const HomeSlideImage: CollectionConfig = {
+  slug: 'home-slide-image',
   upload: {
-    staticDir: 'slide',
+    staticDir: 'payloadcms/home-slide-images',
     imageSizes: [
       {
         name: 'thumbnail',

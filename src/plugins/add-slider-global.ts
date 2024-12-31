@@ -1,20 +1,21 @@
 import { valuePlugin } from '@thebigrick/catalyst-pluginizr';
 import { Config } from 'payload';
 
-import { SlideImage } from '../collections/SlideImage';
-import { Slider } from '../collections/Slider';
+import { HomeSlideImage } from '../collections/home-slide-image';
+import { HomeSlider } from '../collections/home-slider';
 
 const plugin = valuePlugin<Config>({
-  name: 'add-slider-collection',
+  name: 'add-slider-global',
   resourceId: '@thebigrick/catalyst-payloadcms/payload.raw.config',
   wrap: (config) => ({
     ...config,
-    collections: [...(config.collections || []), Slider, SlideImage],
+    globals: [...(config.globals || []), HomeSlider],
+    collections: [...(config.collections || []), HomeSlideImage],
     admin: {
       ...config.admin,
       livePreview: {
         ...config.admin?.livePreview,
-        collections: [...(config.admin?.livePreview?.collections || []), 'slider'],
+        globals: [...(config.admin?.livePreview?.globals || []), 'home-slider'],
       },
     },
   }),
